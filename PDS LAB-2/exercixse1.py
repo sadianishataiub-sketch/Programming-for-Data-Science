@@ -24,7 +24,18 @@ for mark in course_marks:
 
 average_grade = total_marks / len(course_marks)
 
+passed = 0
+failed = 0
+for mark in course_marks:
+
+    if course_marks >= [50]:
+        passed =+ 1
+
+    if course_marks< [50]:
+        failed =+ 1
 
 print(f"highest mark {highest_grade}")
 print(f"lowest mark {lowest_grade}")
 print(f"average mark {average_grade}")
+print(f"passed courses {passed}")
+print(f"failed courses {failed}")
