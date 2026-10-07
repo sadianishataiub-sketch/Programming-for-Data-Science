@@ -1,4 +1,4 @@
-#  LAB-2 EXERCISE 2
+#  LAB-2 EXERCISE 1
 
 data_processing = float(input("Enter your data processing grade: "))
 pds = float(input("Enter your data pds: "))
@@ -17,9 +17,14 @@ for mark in course_marks:
 
     if mark > maximum :
         highest_grade = mark
+        
 
     if mark < minimum:
         lowest_grade = mark
 
 average_grade = total_marks / len(course_marks)
 
+
+print(f"highest mark {highest_grade}")
+print(f"lowest mark {lowest_grade}")
+print(f"average mark {average_grade}")
