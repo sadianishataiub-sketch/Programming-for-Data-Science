@@ -1,27 +1,19 @@
-""" LAB TASK 4"""
+#exercise 4
 
-"""• Word Analyzer
+def calculate_grade(marks):
+    average = sum(marks)/len(marks)
+    print("average: ", average)
 
-Ask the user to enter a word or short sentence.
-Display the number of characters, the number of vowels (a, e, i, o, u), and the number of spaces. 
-Use a for loop to examine each character"""
+    if average >= 80:
+        return "A"
+    elif average >= 70 and average <80:
+        return "B"
+    elif average >=60 and average <70:
+        return "C"
+    elif average >= 50 and average < 60:
+        return "D"
+    else:
+        return "F"
 
-print()
-
-sentence = input("enter a sentence: ")
-count = 0
-vowel_count = 0
-spaces = 0
-for x in sentence:
-    count += 1
-
-    if x == "a" or x == "e" or x == "i" or x == "o" or x == "u":
-        vowel_count += 1
-
-    if x == " ":
-        spaces  += 1
-
-
-print(f"count: {count}")
-print(f"vowels : {vowel_count}")
-print(f"spaces: {spaces}")
+marks = [89, 90, 78, 86, 65.5]
+print(calculate_grade(marks))
